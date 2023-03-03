@@ -16,8 +16,10 @@ if __name__ == "__main__":
     for i in os.listdir(dirpath):
         path = os.path.join(dirpath,i)
         if os.path.isdir(path):
-            baro['filepath'].append(os.path.join(path,os.listdir(path)[0]))    
-            baro['flodername'].append(i)
+            for filename in os.listdir(path):
+                if 'baro' in filename:
+                    baro['filepath'].append(os.path.join(path,filename))    
+                    baro['flodername'].append(i)
     # print(filepath,flodername)
 
     # 绘图
