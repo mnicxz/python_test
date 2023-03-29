@@ -55,12 +55,12 @@ def getDistance(latA, lonA, latB, lonB):
     return distance
 
 if __name__ == '__main__':
-    path = 'D:\\chenchen2\\桌面\\GPS轨迹误差工具\\1679729658412-GPX.gpx'
+    path = 'D:\\mincxz\\桌面\\GPS轨迹误差工具\\1679729658412-GPX.gpx'
     sum,suma=0,0
     gps=gpx2csv(path)
     # gps=pd.DataFrame(trackpoint)
     # print("tcx数据如下:\n", polar)
-    gps.to_csv('D:\\chenchen2\\桌面\\GPS轨迹误差工具\\hr.csv')
+    gps.to_csv('D:\\mincxz\\桌面\\GPS轨迹误差工具\\hr.csv')
     # for i in range(len(gps)-1):
     #     # dis=cal_dis(gps['Lat'][i],gps['Lon'][i],gps['Lat'][i+1],gps['Lon'][i+1])
     #     # sum=sum+dis*100000
@@ -69,7 +69,7 @@ if __name__ == '__main__':
     #     print('%f' % sum[0][0], suma)
     # print('*'*50)
 
-    whs_path='D:\\chenchen2\\桌面\\2\\Run\\WHS_2022-09-07_20-03-04.csv'
+    whs_path='D:\\mincxz\\桌面\\2\\Run\\WHS_2022-09-07_20-03-04.csv'
     data=pd.read_csv(whs_path)
     tmp={'Lap':[]}
     # for i in range(len(data['Time'])):
